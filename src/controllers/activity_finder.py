@@ -19,10 +19,10 @@ class ActivityFinder:
                     }
                 )
 
-                return {
-                    "body": {"activities": formatted_activities},
-                    "status_code": 200,
-                }
+            return {
+                "body": {"activities": formatted_activities},
+                "status_code": 200,
+            }
         except Exception as exception:
             return {
                 "body": {"error": "Bad Request", "message": str(exception)},

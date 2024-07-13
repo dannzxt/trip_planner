@@ -29,7 +29,7 @@ class ParticipantCreator:
             self.__participants_repository.registry_participant(participant_infos)
 
             return {
-                "body": {"partipant_id": participant_id},
+                "body": {"participant_id": participant_id},
                 "status_code": 201,
             }
         except Exception as exception:
